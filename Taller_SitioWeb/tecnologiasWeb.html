@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Tecnologías Web</title>
 </head>
 <body>
     <header>
-        <h3>ULTIMAS NOTICIAS</h3>
-        <img src="img/logo.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="tecnologiasWeb.html">Tecnologias</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
+        <div class="header-top">
+            <h3>NOTICIAS WEB</h3>
+        </div>
+        <div class="header-middle">
+            <img src="img/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="tecnologiasWeb.html">Tecnologías</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <img src="img/inicio2.jpg" alt="BannerInicio">
+            
+            <img src="img/inicio3.jpg" alt="BannerImpacto">
+        </div>
     </header>
     
-    <section>
+    <section class="content">
         <h1>Fron-End</h1>
         <article>
             <h2>¿Que es Frontend?</h2>
@@ -38,31 +47,31 @@
                 También se encarga de hacer que todo funcione correctamente y de responder a tus acciones, como hacer clic en un botón o desplazarte por la página.</p>
             <p></p>
         </article>
+        <article>
         <h2>Lenguajes en el desarrollo Web</h2>
-        <aside>
+       
             <h4>HTML</h4>
             <img src="img/html.webp" alt="">
             <p>Este es un lenguaje de programación usado para la creación de sitios web. Como las tecnologías evolucionan a pasos 
                 agigantados, HTML está en constante renovación, la versión actual es HTML5. Consiste en un conjunto de códigos cortos,
                  que se clasifican como archivos de textos en las etiquetas. Es decir, el texto se guarda en un archivo llamado HTML 
                  que se puede encontrar a través de los buscadores. Cada una de las etiquetas generadas tiene diferentes funciones.</p>
-        </aside>
-        <aside>
+        
             <h4>CSS</h4>
             <img src="img/css.webp" alt="">
             <p>Es una de las tecnologías web a la que más recurren los programadores gráficos a la hora de desarrollar sus proyectos. 
                 Es un lenguaje de diseño gráfico que sirve, entre otras muchas funciones, para indicar la representación visual de 
                 las estructuras HTML, así como las estructuras HTML definidas anteriormente deben representarse visualmente. De esta 
                 manera, el lenguaje CSS sirve para acotar y trazar el aspecto visual de las etiquetas generadas por el HTML.</p>
-        </aside>
-        <aside>
+        
             <h4>JAVASCRIPT</h4>
             <img src="img/javascript.png" alt="">
             <p>Al usar este lenguaje de programación multiplataforma es posible dar una mayor interactividad y dinamismo a los sitios 
                 web. Y esto es así porque permite crear tanto animaciones como objetos, localizar errores en formularios, cambiar 
                 elementos web de manera intuitiva y crear cookies, etc. Además, también permite desarrollar aplicaciones tan potentes 
                 como Facebook o Twitter. Por esto, JavaScript es una de las tecnologías web más usadas en la actualidad.</p>
-        </aside>
+            </article>
+            <article>
         <h2>Herramientas en el desarrollo Web</h2>
         <aside>
             <h3>VisualStudioCode</h3>
@@ -70,20 +79,17 @@
             <p>Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. 
                 Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente 
                 de código, fragmentos y refactorización de código</p>
-        </aside>
-        <aside>
+        
             <h3>SUBLIME TEXT</h3>
             <img src="img/sublimetext.png" alt="">
             <p>Sublime Text es un editor de texto y editor de código fuente. Está escrito en C++ y Python para los plugins.​ 
                 Desarrollado originalmente como una extensión de Vim, con el tiempo fue creando una identidad propia. Aún 
                 conserva un modo de edición tipo vi llamado Vintage mode</p>
-        </aside>
+            </article>
         
        
 
-    </section>
-
-    <section>
+    
         <h1>BACK-END</h1>
         <article>
             <h2>¿Que es Backend?</h2>
@@ -94,26 +100,25 @@
                 
                 El Backend también accede al servidor, que es una aplicación especializada que entiende la forma en la que el navegador hace solicitudes.</p>
             <p></p>
-        </article>
        
+       </article>
+       <article>
         <h2>Lenguajes de programación en el desarrollo Back-End</h2>
-        <aside>
+        
             <h4>PYHTON</h4>
             <img src="img/python.webp" alt="">
             <p>Se trata de un lenguaje de programación cuya popularidad está creciendo. Y eso es porque, además de tener un número
                  alto de librerías, es totalmente gratis. Sin embargo, y a pesar de su sencillez, es bastante potente, ya que usa 
                  menos líneas de código que cualquier otro lenguaje de programación para cualquier aplicación que se ejecute. 
                  Y eso supone una gran ventaja respecto a otros tipos de lenguajes de programación.</p>
-        </aside>
-        <aside>
+        
             <h4>JAVASCRIPT</h4>
             <img src="img/javascript.png" alt="">
             <p>Al usar este lenguaje de programación multiplataforma es posible dar una mayor interactividad y dinamismo a los sitios 
                 web. Y esto es así porque permite crear tanto animaciones como objetos, localizar errores en formularios, cambiar 
                 elementos web de manera intuitiva y crear cookies, etc. Además, también permite desarrollar aplicaciones tan potentes 
                 como Facebook o Twitter. Por esto, JavaScript es una de las tecnologías web más usadas en la actualidad.</p>
-        </aside>
-        <aside>
+        
             <h4>PHP</h4>
             <img src="img/phpp.png" alt="">
             <p>La característica principal de PHP es que se usa para la comunicación de tu sitio web con un servidor de datos. 
@@ -121,38 +126,19 @@
                 como MySQL y con HTML. Así, gracias a este lenguaje de programación de propósito general, es posible proceder 
                 a la recopilación de datos de formularios, la modificación de base de datos o la administración de archivos en el 
                 servidor, entre muchos otros.</p>
-        </aside>
+            </article>
+            <article>
         <h2>Herramientas en el desarrollo Back-End</h2>
-        <aside>
+        
             <h3>frameworks</h3>
             <img src="img/frameworks.png" alt="">
             <p>Un framework es un esquema o marco de trabajo que ofrece una estructura base para elaborar un proyecto con objetivos 
                 específicos, una especie de plantilla que sirve como punto de partida para la organización y desarrollo de software.</p>
-        </aside>
+            </article>
 
     </section>
 
-    <section>
-        <table>
-            <tr>
-                <th>Fron-End</th>
-                <th>Back-End</th>
-            </tr>
-            <tr>
-                <td>Se diseña en lenguaje como HTML, CSS y JAVASCRIPT</td>
-                <td>Se programa en lenguajes como PHP, Pyhton y JAVASCRIPT </td>
-            </tr>
-            <tr>
-                <td>Tecnologias</td>
-                <td>Descripción</td>
-            </tr>
-            <tr>
-                <td>Tecnologias</td>
-                <td>Descripción</td>
-                
-            </tr>
-        </table>
-    </section>
+    
 
     <footer>
         <p>Derechos reservados by @dljimenez2</p>
@@ -161,6 +147,5 @@
             <li><img src="img/what.png" alt=""><a href="">Whatsapp</a></li>
             <li><img src="img/inst.png" alt=""><a href="">Instagram</a></li>
         </ul>
-
     </footer>
 </html>

@@ -1,0 +1,368 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify; /* Justifica todo el texto en el cuerpo */
+}
+
+/* Header */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    color: white;
+    overflow: hidden;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0;
+    background: black;
+}
+
+.header-top h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+        color: #fff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #00ffff, 0 0 15px #00ffff, 0 0 20px #00ffff, 0 0 25px #00ffff, 0 0 30px #00ffff, 0 0 35px #00ffff;
+        color: #fff;
+    }
+}
+
+.header-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.header-middle img {
+    max-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+   
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.banner img {
+
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    
+}
+
+
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Añade transición */
+}
+
+.content:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Eleva el contenedor al pasar el cursor */
+}
+
+.content h1, .content h2 {
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.content h1:hover, .content h2:hover {
+    color: #007BFF; /* Cambia el color del texto al pasar el cursor */
+}
+
+.content article {
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.content article:hover {
+    background-color: #d0cece72; /* Cambia el fondo del artículo al pasar el cursor */
+    
+    border-radius: 5px;
+}
+
+.content p, .content ul, .content ol {
+    margin-bottom: 20px;
+}
+
+.content ul, .content ol {
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.content ul li, .content ol li {
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.content ul li:hover, .content ol li:hover {
+    color: #007BFF; /* Cambia el color de los elementos de la lista al pasar el cursor */
+}
+
+.content iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content iframe:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del iframe al pasar el cursor */
+}
+
+/* Asignar estilos a los enlaces dentro de la sección .content */
+.content a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Aside Section */
+.tecn {
+    text-align: center;
+    margin: 20px;
+}
+
+.tecn h2 {
+    margin-bottom: 20px;
+}
+
+.tecn h3 {
+    margin: 10px 0;
+}
+
+/* Contenedor para las imágenes */
+.tecn .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+}
+
+/* Estilos para cada imagen */
+.tecn .image-container a {
+    display: block;
+    position: relative;
+    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    border: 5px solid #ddd; /* Borde para diferenciar las imágenes */
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.tecn .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilo para el texto sobre la imagen */
+.tecn .image-container a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejor visibilidad */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(100% - 20px); /* Ajusta el ancho del texto */
+    box-sizing: border-box;
+}
+
+/* Aplicar los textos a las imágenes */
+.tecn .image-container a:nth-of-type(1)::before {
+    content: "FrontEnd"; /* Texto para la primera imagen */
+}
+
+.tecn .image-container a:nth-of-type(2)::before {
+    content: "BackEnd"; /* Texto para la segunda imagen */
+}
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el campo de archivo */
+input[type="file"] {
+    padding: 0;
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para el área de texto */
+textarea {
+    height: 150px;
+    resize: vertical; /* Permite que el usuario cambie el tamaño verticalmente */
+}
+
+/* Estilo para el botón de envío */
+button[type="submit"] {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover para el botón de envío */
+button[type="submit"]:hover {
+    background-color: #6a11cb;
+}
+
+
+
+
+
+/* Ajusta el ancho de las imágenes específicas */
+img[src="img/frontend.png"],
+img[src="img/html.webp"],
+img[src="img/css.webp"],
+img[src="img/javascript.png"],
+img[src="img/vsc.png"],
+img[src="img/sublimetext.png"],
+img[src="img/backend.png"],
+img[src="img/python.webp"],
+img[src="img/phpp.png"],
+img[src="img/frameworks.png"] {
+    max-width: 100%; /* Ajusta el tamaño de las imágenes para que no superen el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Evita el espacio en la parte inferior de las imágenes */
+    margin: 0 auto; /* Centra la imagen en su contenedor */
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ffcb05;
+}
+
+footer ul li img {
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
