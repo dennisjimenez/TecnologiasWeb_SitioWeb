@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #f4f4f4;
+    background: #f1f1f1;
     color: #333;
     line-height: 1.6;
     text-align: justify; /* Justifica todo el texto en el cuerpo */
@@ -86,7 +86,7 @@ nav ul li a:hover {
     display: flex;
    
     position: relative;
-    height: 1000px;
+    height: 800px;
     width: 100%;
     margin: 0 auto;
     
@@ -101,7 +101,23 @@ nav ul li a:hover {
     
 }
 
+/*Header Name*/
+.header-name h1{
+    height: 400px;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
 
+}
+.header-name2 h1{
+    height: 130px;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+
+}
 
 /* Content Section */
 .content {
